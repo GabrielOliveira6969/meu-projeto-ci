@@ -1,0 +1,100 @@
+   88          run: echo "Iniciando testes locais"
+   89        
+   90        - name: Verificar Node.js
+   91          run: node -v
+   92        
+   93        - name: Finalizar
+   94          run: echo "Finalizad
+   95  on:
+   96  jobs:
+   97  docker --version
+   98  act --verison
+   99  act -v
+  100  act --version
+  101  touch 01-hello-local.yml.
+  102  nano 01-hello-local.yml.
+  103  act -l
+  104  ls -R
+  105  cd
+  106  mkdir meu-projeto-ci
+  107  git delete meu-projeto-ci
+  108  git removee meu-projeto-ci
+  109  git remove meu-projeto-ci
+  110  clear
+  111  name: Usando needs
+  112  on: workflow_dispatch
+  113  jobs:
+  114  act -l
+  115  act --version
+  116  docker --verison
+  117  docker.io --verison
+  118  cd
+  119  sudo apt install curl docker.io
+  120  sudo systemctl start docker
+  121  sudo systemctl enable docker
+  122  sudo usermod -aG docker $USER
+  123  newgrp docker
+  124  ls
+  125  meu-projeto-ci
+  126  ls
+  127  cd meu-projeto-ci
+  128  ls
+  129  rm meu-projeto-ci
+  130  cd
+  131  rmdir meu-projeto-ci
+  132  rm -r meu-projeto-ci
+  133  ls
+  134  clear
+  135  mkdir meu-projeto-ci
+  136  rmdir meu-projeto-ci
+  137  ls
+  138  clone git@github.com:GabrielOliveira6969/meu-projeto-ci.git
+  139  ls
+  140  git clone git@github.com:GabrielOliveira6969/meu-projeto-ci.git
+  141  ls
+  142  cd meu-projeto-ci
+  143  cd
+  144  rmdir meu-projeto-ci
+  145  rm -r meu-projeto-ci
+  146  ls
+  147  rm -r meu-projeto-ci
+  148  ls
+  149  mkdir meu-projeto-ci
+  150  cd meu-projeto-ci
+  151  git init
+  152  echo "# Meu Projeto CI" > README.md
+  153  git add .
+  154  git commit -m "commit inicial"
+  155  cat README.md
+  156  git push origin main
+  157  mkdir -p .github/workflows
+  158  docker --version
+  159  act --version
+  160  cd .github
+  161  cd workflows
+  162  nano 01-hello-local.yml
+  163  act -l
+  164  cd meu-projeto-ci
+  165  cd ..
+  166  act -l
+  167  cd ..
+  168  act -l
+  169  ls
+  170* 
+  171  act -W .github/workflows/01-hello-local.yml | grep "Iniciando\|Finalizado\|v"
+  172  cd .github/workflows
+  173  nano 02-pipeline-principal.yml
+  174  cd..
+  175  cd ..
+  176  act -n
+  177  act -l
+  178  act -W .github/workflows/02-pipeline-principal.yml -P ubuntu-latest=node:slim
+  179  act -j scan-de-seguranca
+  180  cd .github/workflows
+  181  act -j scan-de-seguranca
+  182  cd ..
+  183  act -j scan-de-seguranca
+  184  cd ..
+  185  act -j scan-de-seguranca
+  186  nano README.md
+  187  history 100 > comandos.txt
